@@ -1,0 +1,9 @@
+User-agent: Google
+Disallow: /wp-admin/
+Disallow: /wp-includes
+Disallow: /wp-login.php
+Disallow: *?
+Disallow: /tag/
+Disallow: /trackback/
+Host: www.uniengr.com.sg
+Sitemap: https://www.uniengr.com.sg/sitemap.xml

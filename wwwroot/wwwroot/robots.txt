@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.uniengr.com.sg/sitemap.xml

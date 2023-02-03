@@ -1,0 +1,69 @@
+﻿<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+--%>
+<telerik:radeditor runat="server" SkinId="tfsDefault" Skin="Metro" Width="100%" AutoResizeHeight="True"     
+    ContentFilters="RemoveScripts, FixUlBoldItalic, FixEnclosingP, IECleanAnchors, MozEmStrong, ConvertFontToSpan, IndentHTMLContent" BorderStyle="None" >    
+    <CssFiles>
+        <telerik:EditorCssFile Value="~/webparts/radeditor/css/StyleSheet.css" />
+    </CssFiles>
+</telerik:radeditor>
+<telerik:RadWindowManager  runat="server" Skin="Telerik"   SkinID="tfsDefault" InitialBehavior="Close" Style="z-index:7000"
+            DestroyOnClose="True" Modal="True"
+        VisibleStatusbar="False" Animation="Fade">
+     
+    </telerik:RadWindowManager>   
+
+    <telerik:RadCaptcha   runat="server" CaptchaImage-BackgroundColor="#e6e6d8" CaptchaImage-TextColor="#537500" 
+                                    ErrorMessage="You have entered an invalid code." SkinID="NDTDefault"
+                                   
+                                    CaptchaTextBoxLabel="" EnableRefreshImage="True">
+                                </telerik:RadCaptcha>
+
+                                <telerik:RadTextBox  SkinId="SettingProperties"  
+                  runat="server"  Skin="Telerik">
+              </telerik:RadTextBox>
+
+              <telerik:RadComboBox  Runat="server"  SkinId="tfsDefault" Skin="Default">
+            
+        </telerik:RadComboBox>
+<asp:WebPartZone runat="server" WebPartVerbRenderMode="TitleBar" DragHighlightColor="Blue"
+ CssClass="wpbody"   PartStyle-CssClass="wppart"  PartChromeType="BorderOnly"   
+
+   HeaderStyle-CssClass="wpheader"   
+      PartTitleStyle-CssClass = "wpparttitle" 
+	    EmptyZoneText="Add a widget to this zone by clicking the <strong>Add Widget</strong> link on the right top of the page."  
+        Padding="0" BorderColor="#0066FF"  
+        BorderStyle="Dashed"  BorderWidth="1"   Width="100%">
+        <PartChromeStyle BorderColor="#999999" BorderWidth="0px" BorderStyle="None" CssClass="wppartchrome"  />
+   <DeleteVerb ImageUrl="~/app_themes/admin/images/delete.gif"></DeleteVerb>
+               <%--  <RestoreVerb ImageUrl="~/app_themes/admin/images/restore.png"  />--%>
+                  <RestoreVerb Visible="False" />
+            <HelpVerb Visible="False" />
+            <CloseVerb Visible="False"></CloseVerb>
+            <ConnectVerb Visible="False" />
+            <EditVerb  Visible="False" />
+             <%-- <MinimizeVerb ImageUrl="~/app_themes/admin/images/minimize.png" />--%>
+              <MinimizeVerb Visible="False" />
+        <MenuLabelHoverStyle ForeColor="Black"  BorderStyle="none" BorderWidth="0px" />
+        <EmptyZoneTextStyle Font-Size="0.8em" />
+        <MenuLabelStyle BackColor="red" ForeColor="White" />
+        <MenuVerbHoverStyle BackColor="#EFF3FB" BorderColor="#CCCCCC" BorderStyle="Solid"
+            BorderWidth="1px" ForeColor="#333333" />
+        <MenuVerbStyle  BorderColor="#507CD1" BorderStyle="Solid" BorderWidth="1px" ForeColor="White" />
+        <TitleBarVerbStyle Font-Size="12px" Font-Underline="False" ForeColor="Maroon" />
+      <SelectedPartChromeStyle BackColor="#0099FF" BorderColor="#0099FF"  
+        BorderStyle="Dashed" BorderWidth="2px" />
+        <MenuPopupStyle BackColor="#507CD1" BorderColor="#CCCCCC" BorderWidth="1px" Font-Names="Calibri"
+            Font-Size="0.6em" />
+              <FooterStyle BorderStyle="None" BorderWidth="0px" />
+</asp:WebPartZone>
