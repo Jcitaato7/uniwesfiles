@@ -1,0 +1,135 @@
+/*********************************************************************************************
+
+How to Create CSS3 Content Accordion [Tutorial]
+"How to Create CSS3 Content Accordion" that was specially made for DesignModo by our friend Valeriu Timbuc.
+
+Links: 
+http://vtimbuc.net/
+http://codecanyon.net/user/downv/portfolio?ref=downv
+https://twitter.com/vtimbuc
+http://designmodo.com/futurico
+http://vladimirkudinov.com
+http://rockablethemes.com
+
+ *********************************************************************************************/
+
+.accordion, .accordion div, .accordion h1, .accordion p, .accordion a, .accordion img, .accordion span, .accordion em, .accordion ul, .accordion li {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+/* Accordion Layout Styles */
+
+.accordion {
+	/*width: 100%;*/
+	padding: 1px 5px 5px 5px;
+	background: #fff;
+	-webkit-box-shadow: 0px 1px 0px rgba(255, 255, 255, .05);
+	-moz-box-shadow: 0px 1px 0px rgba(255, 255, 255, .05);
+	box-shadow: 0px 1px 0px rgba(255, 255, 255, .05);
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+.accordion .tab {
+	display: block;
+	height: 35px;
+	margin-top: 4px;
+	padding-left: 20px;
+	font: bold 12px/35px Arial, sans-serif;
+	text-decoration: none;
+	color: #000;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, .2);
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-box-shadow: 0px 1px 0px rgba(0, 0, 0, .1), inset 0px 1px 0px rgba(255, 255, 255, .1);
+	-moz-box-shadow: 0px 1px 0px rgba(0, 0, 0, .1), inset 0px 1px 0px rgba(255, 255, 255, .1);
+	box-shadow: 0px 1px 0px rgba(0, 0, 0, .1), inset 0px 1px 0px rgba(255, 255, 255, .1);
+	background: #e2e2e2; /* Old browsers */
+	background: -moz-linear-gradient(top, #e2e2e2 0%, #dbdbdb 50%, #e2e2e2 60%, #fefefe 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e2e2e2), color-stop(50%, #dbdbdb), color-stop(60%, #e2e2e2), color-stop(100%, #fefefe)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #e2e2e2 0%, #dbdbdb 50%, #e2e2e2 60%, #fefefe 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #e2e2e2 0%, #dbdbdb 50%, #e2e2e2 60%, #fefefe 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #e2e2e2 0%, #dbdbdb 50%, #e2e2e2 60%, #fefefe 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #e2e2e2 0%, #dbdbdb 50%, #e2e2e2 60%, #fefefe 100%); /* W3C */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=0 ); /* IE6-9 */
+}
+.accordion .tab:hover, .accordion div:target .tab {
+	color: #2b3b06;
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, .15);
+	-webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, .3), inset 1px 1px 1px rgba(255, 255, 255, .45);
+	-moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, .3), inset 1px 1px 1px rgba(255, 255, 255, .45);
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, .3), inset 1px 1px 1px rgba(255, 255, 255, .45);
+	background: #ffe65e; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffe65e 0%, #ffdd00 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffe65e), color-stop(100%, #ffdd00)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffe65e 0%, #ffdd00 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffe65e 0%, #ffdd00 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffe65e 0%, #ffdd00 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #ffe65e 0%, #ffdd00 100%); /* W3C */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe65e', endColorstr='#ffdd00', GradientType=0 ); /* IE6-9 */
+}
+.accordion div .content {
+	display: none;
+	margin: 20px;
+}
+.accordion div:target .content {
+	display: block;
+}
+.accordion > div {
+	height: 40px;
+	overflow: hidden;
+ -webkit-transition: all .3s ease-in-out;
+ -moz-transition: all .3s ease-in-out;
+ -o-transition: all .3s ease-in-out;
+ -ms-transition: all .3s ease-in-out;
+ transition: all .3s ease-in-out;
+}
+.accordion > div:target {
+	height: auto;
+}
+/* Accordion Content Styles */
+
+.accordion .content h1 {
+	color: #666;
+	font: 18px/32px Arial, sans-serif;
+	
+}
+.accordion .content p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #333;
+	text-align: left;
+	line-height: 23px;
+	
+	
+	text-transform: none !important;
+}
+.accordion .content span {
+	font: italic 11px/12px Georgia, Arial, sans-serif;
+	color: #4f4f4f;
+}
+.accordion .content em.bullet {
+	width: 5px;
+	height: 5px;
+	margin: 0 5px;
+	background: #6b8f1a;
+	display: inline-block;
+	-webkit-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4);
+	-moz-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4);
+	box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.accordion .content ul li {
+	
+	margin: 5px 20px 5px 20px;
+}
+.accordion .content img {
+	-webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, .5);
+	-moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, .5);
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, .5);
+	
+}

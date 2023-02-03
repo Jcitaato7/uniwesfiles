@@ -1,0 +1,115 @@
+﻿body
+{
+    font-family: 'Oxygen' , 'Lucida Grande' , 'Lucida Sans Unicode';
+    font-size: 12px;
+    background: #000000; /*  background-color:#EFEFEF;
+  background-position:50% 0;
+  background-repeat:no-repeat no-repeat;
+   background: #F3F5F5 url('images/bodyback.png') repeat no-repeat 0 0;*/
+}
+
+
+.header {
+    background-position: left top;
+    height: 80px;
+    z-index: 10000000;
+    color: #FFFFFF;
+    background-image: url('../images/logo.png');
+    background-size: 175px;
+    background-repeat: no-repeat;
+}
+.loginDisplay {margin-right:10px; margin-top:10px;float:right;
+}
+ .box
+{
+    background:#fefefe;
+    border: 1px solid #C3D4DB;
+	border-top:1px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    -moz-box-shadow:rgba(0,0,0,0.15) 0 0 1px;
+    -webkit-box-shadow:rgba(0,0,0,0.15) 0 0 1px;
+    box-shadow:rgba(0,0,0,0.15) 0 0 1px;
+    color:#444;
+    font:normal 12px/14px Arial, Helvetica, Sans-serif;
+    margin:0 auto 30px;
+	 
+}
+	.button,input[type="button"] {
+    padding: 5px; margin:5px;
+  background: #777 url(../images/button.png) repeat-x bottom;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+   font-family:Calibri, 'Lucida Sans Unicode', Tahoma, Arial, san-serif; 
+	font-size: 12px;border-radius: 5px !important; text-decoration:none;}
+    
+.button:hover {
+    background-position: 0 -48px;
+    }
+.button:active {
+    background-position: 0 top;
+    position: relative;
+    top: 1px;
+ 
+    }
+
+.button.blue,input[type="button"]
+{
+    background-color: #3399FF;
+}
+ /*.button.orange,input[type="button"]
+{
+    background-color: #e7463b;
+}*/
+ .button.small { font-size: 75%; padding: 3px 7px; }
+.button.small:hover { background-position: 0 -50px; }
+.button.small
+:active { padding: 4px 7px 2px; background-position: 0 top; }
+.button.large { font-size: 125%; padding: 7px 12px; }
+.button.large:hover { background-position: 0 -35px; }
+.button.large:active { padding: 8px 12px 6px; background-position: 0 top; }
+	
+	/*Overlay*/
+	  #overlay {
+     
+ cursor:pointer;
+  text-align:center;
+   vertical-align:top;  position: absolute; width:100%; top:40%;z-index:6000;opacity: 0; left:0px; 
+	  }
+	   #overlay:hover {
+     
+     position: absolute;background-color:white;opacity:0.99; 
+     left: 0px;
+     top: 0px;
+     width:100%;
+      height:530px;
+     text-align:center;
+     z-index: 1000;
+}
+.t1{color:#333333;text-shadow:1px 1px 1px #cfcfcf; font-size:23px;display:block;}
+ .rmHorizontal span {text-transform:uppercase !important;}
+ .rmHorizontal li .rmLink {text-transform:uppercase !important;}
+ 
+ 
+ table {
+  border-collapse: collapse;   
+}
+  hr {border: 1px solid #DDDDDD; border-style: none none solid;   }
+  .viewWrap {
+    padding: 10px;
+    background-color: #6FB7FF;
+    width: 95%;
+}
+div.adminPopUp
+{
+    padding: 5px; 
+    margin: 5px; 
+    border: 1px solid gray;
+}
+.riTextBox {
+    font: normal 12px Arial,Helvetica,sans-serif !important;
+}

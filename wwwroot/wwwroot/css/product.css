@@ -1,0 +1,13 @@
+.prod-up .RadUpload input.ruFakeInput
+{
+  display: none !important;
+}
+.txt-readonly
+{
+    background-color: #F2F2F2 !important;
+}
+div.RadUploadSubmit, div.RadUpload_Metro .ruButton {
+    height: 24px !important;
+    margin: 0px;
+    padding: 0px;
+}

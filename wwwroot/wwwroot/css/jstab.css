@@ -1,0 +1,92 @@
+﻿.tab { 
+	/*font-family: verdana,sans-serif; 
+	font-size: 14px;*/
+	width: 183px;
+	white-space: nowrap;
+	text-align: center;
+	border: 1px solid #000;
+    padding: 3px 0px;
+	cursor: pointer;
+	margin-right: 1px;
+	border-bottom:none;
+	}
+.tab a {
+	text-decoration: none;
+	}
+.tab a:hover { 
+	text-decoration: underline;	
+}
+.tabhold, .tabhold a { 
+	background-color: black;
+	color: #fff;
+	}
+.tabhold, .tabhold a:hover {
+	color: #fff;
+}	
+.tabfocus, .tabfocus a { 
+	background-color: #ffcc00;
+	color: #000;
+	
+	}
+.tabfocus, .tabfocus a:hover {
+	color: #000;
+}	
+.tabcontent { 
+	width: 721px;
+	border: 1px solid #000;
+	border-top: 0px none;
+	padding: 15px 10px;
+	border-top:1px solid #000;
+	}
+
+.tabcontent UL {
+	padding: 0px;
+	margin: 0px;
+}
+.tabcontent LI {
+    background: url(images/icon_arrow.gif) no-repeat 0% 6px;
+    padding: 0px 0px 0px 19px;
+    margin: 0px;
+    list-style: none;	    
+}
+.tab-adm { 
+	width: 100px;
+	white-space: nowrap;
+	text-align: center;
+    padding: 2px 0px;
+	cursor: pointer;
+	margin-right: 1px;
+	height: 20px;
+}
+.tabcontent-adm { 
+	/*width: 99%;*/
+	border: 1px solid gray;
+	padding: 5px;
+	margin: 5px;
+}
+.tabhold-adm {
+    background: url(images/tab-b.gif) no-repeat;
+	color: #fff;
+	}
+.tabhold-adm a, .tabhold-adm a:hover {
+	color: #fff;
+    font-weight: normal;
+}	
+.tabfocus-adm {
+    background: url(images/tab-b.gif) no-repeat;
+	color: #000;	
+	}
+.tabfocus-adm a 	
+{
+    font-weight: bold;
+}
+.tabfocus-adm, .tabfocus-adm a:hover {
+	color: #000;
+}
+.container-adm {
+    padding: 3px 3px;
+}
+.jstab-buttons
+{
+  margin: 10px 0px 0px 5px;
+}
